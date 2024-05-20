@@ -1,0 +1,9 @@
+function displayValues(obj) {
+    return Object.values(obj);
+  }
+  
+  const cars = { Toyota: "Landcruiser", Mazda: "Demio", Honda: "R25" };
+  const fruits = { Apple: "Red", Banana: "Yellow", Orange: "Orange" };
+  
+  console.log(displayValues(cars));   
+  console.log(displayValues(fruits));

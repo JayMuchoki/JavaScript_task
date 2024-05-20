@@ -1,0 +1,8 @@
+function hasProperty(obj, property) {
+    return obj.hasOwnProperty(property);
+}
+
+
+const obj = { book :'Blossoms', year:2003,author:'Fredrick' };
+console.log(hasProperty(obj, 'year')); // true
+console.log(hasProperty(obj, 'production')); // false

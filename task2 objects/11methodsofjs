@@ -1,0 +1,14 @@
+function allMethods(obj) {
+    // Get all property names
+    const props = Object.getOwnPropertyNames(obj);
+  
+    // Filter the properties to include only methods
+    const methods = props.filter(prop => typeof obj[prop] === 'function');
+  
+    return methods;
+  }
+  
+ 
+  console.log(allMethods(Array));
+ 
+  

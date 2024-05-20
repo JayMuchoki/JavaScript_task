@@ -1,0 +1,14 @@
+function swapKeysAndValues(obj) {
+    const swappedObj = {};
+    for (let key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            swappedObj[obj[key]] = key;
+        }
+    }
+    return swappedObj;
+}
+
+
+const obj = { name: 'Jacob', age: 23, county: 'Laikipia' };
+const swappedObj = swapKeysAndValues(obj);
+console.log(swappedObj);

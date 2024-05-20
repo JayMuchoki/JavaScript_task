@@ -1,0 +1,8 @@
+function objectToList(obj) {
+    return Object.entries(obj);
+}
+
+
+const obj = { name: 'jacob', school:'laikipia', year: 23 };
+const list = objectToList(obj);
+console.log(list);
