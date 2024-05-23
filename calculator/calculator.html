@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<style>
+  body , .jumbotron {padding: 30px}
+  .text-giant {font-size:40px}
+</style>
+<body>
+ 
+  <div class="jumbotron">
+    <h2>How much do pies costs</h2>
+    <form>
+ 
+    <div class="form-group">
+      <label for="price">Price</label>
+      <input type="number" class="form-control" name="price" placeholder="price" value="20" id="num1" oninput="multiplication()">
+    </div>
+ 
+    <div class="form-group">
+      <label for="quantity">Quantity</label>
+      <span class="label label-primary quantity-label">1</span>
+      <input type="number" class="form-control" name="quantity" placeholder="quantity" value="1"  id="num2" oninput="multiplication()">
+      <!-- <input type="range" class="form-control" name="quantity" placeholder="quantity" value="1" min="1" max="10" step="1"> -->
+    </div>
+  </form>
+ 
+  <div class="text-right text-giant " id="result">
+    
+  </div>
+ 
+  </div>
+ 
+ 
+  <script>
+   function multiplication(){
+    const value1=document.getElementById('num1').value
+    const value2=document.getElementById('num2').value
+    const value3=value1*value2
+    console.log(value3);
+
+    document.getElementById('result').textContent=`$${value3}`
+   }
+ 
+ 
+  </script>
+ 
+</body>
+</html>
